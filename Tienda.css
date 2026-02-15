@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+.header-img {
+    width: 25%;          /* 👈 Haz la imagen más pequeña aquí */
+    max-width: 300px;    /* límite opcional */
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  /* 👈 Centrada */
+}
+/* Mantener tu header original como estaba */
+header {
+    background: linear-gradient(90deg, #6a00ff, #00c3ff);
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+nav {
+    background-color: #1a1a1a;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 30px;
+}
+
+h2 {
+    border-bottom: 2px solid #6a00ff;
+    padding-bottom: 10px;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #1f1f1f;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card button {
+    background-color: #6a00ff;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #00c3ff;
+}
+
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.catalogo-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+}
+
+.catalogo-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.catalogo-scroll::-webkit-scrollbar-thumb {
+    background: #6a00ff;
+    border-radius: 10px;
+}
+
+.card {
+    min-width: 200px;
+    background-color: #1f1f1f;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    flex-shrink: 0;
+}
